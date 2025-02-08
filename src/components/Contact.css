@@ -1,0 +1,128 @@
+/* src/components/Contact.css */
+.contact {
+    padding: 5rem 2rem;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    color: #333;
+  }
+  
+  .contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+  }
+  
+  textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .submit-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .submit-btn:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+  }
+  
+  .form-status {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .contact h2 {
+      font-size: 2rem;
+    }
+  
+    .contact-form {
+      padding: 1.5rem;
+    }
+  
+    .submit-btn {
+      padding: 0.8rem 1.5rem;
+    }
+  }
+  
+  .email-button {
+    display: inline-block;
+    background-color: #0df08a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+    width: 150px; /* Fixed width for smaller button */
+    text-align: center; /* Center text within the button */
+  }
+  
+  .email-button:hover {
+    background-color: #07863c;
+  }
+  
+  

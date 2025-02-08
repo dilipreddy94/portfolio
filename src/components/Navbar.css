@@ -1,0 +1,86 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #4caf50;
+  }
+  
+  .mobile-menu-icon {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .mobile-menu-icon:focus {
+    outline: none;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      padding: 1rem 0;
+    }
+  
+    .nav-links.mobile {
+      display: flex;
+    }
+  
+    .nav-links a {
+      padding: 0.5rem 0;
+      text-align: center;
+    }
+  
+    .mobile-menu-icon {
+      display: block;
+    }
+  }
+  
+  .logo-link {
+    text-decoration: none; /* Remove underline */
+    font-size: 24px;
+    font-weight: bold;
+    color: #23ddd6; /* Change this color to match your design */
+  }
+  
+  .logo-link:hover {
+    color: #0ab4ae; /* Change to your desired hover color */
+  }

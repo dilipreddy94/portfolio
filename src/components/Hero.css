@@ -1,0 +1,134 @@
+/* src/components/Hero.css */
+.hero {
+    position: relative;
+    height: 80vh;
+    color: white;
+    overflow: hidden;
+    background-image: url('C:\Users\dilip reddy\Desktop\portfolio\public\Background.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center center; /* Centers the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255); /* Text color for contrast */
+    text-align: center;
+    transition: background 0.5s ease-in-out;
+}
+  
+  .hero-overlay {
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero h1 span {
+    color: #c4184b;
+  }
+  
+  .hero p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  
+  .hero .btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #ffcb05;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .hero .btn:hover {
+    transform: scale(1.1);
+    background-color: #ffc107;
+  }
+  
+  /* Decorative shapes */
+  .hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    filter: blur(100px);
+    z-index: 0;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+    z-index: 0;
+  }
+  
+
+  .hero-content {
+    z-index: 1; /* Ensures content is above the background and overlay */
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Call to Action Button */
+  .cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Parallax Effect (for smooth scroll and zooming effect) */
+  .hero {
+    background-attachment: fixed; /* Creates a parallax effect */
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 768px) {
+    .hero {
+      background-attachment: scroll; /* Disable parallax on small screens */
+      height: 60vh; /* Adjust the height for smaller screens */
+    }
+  
+    .cta-button {
+      font-size: 14px; /* Smaller button on mobile */
+      padding: 8px 16px; /* Adjust padding on smaller screens */
+    }
+  
+    .hero-content {
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  /* Fade-In Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
